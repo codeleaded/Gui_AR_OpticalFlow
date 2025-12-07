@@ -31,7 +31,7 @@ void Setup(AlxWindow* w){
     rect_v = (Vec2){ 0.0f,0.0f };
 }
 void Update(AlxWindow* w){
-    Sprite captured = Sprite_None();
+    Sprite captured = Sprite_Null();
     captured.img = RLCamera_Get(&rlc,&captured.w,&captured.h);
     Sprite_Resize(&captured,OUTPUT_WIDTH,OUTPUT_HEIGHT);
     
